@@ -5,23 +5,60 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-
-  <link rel="stylesheet" href="http://cdn.bootcss.com/flat-ui/2.3.0/css/flat-ui.css">
-  <link rel="stylesheet" href="htt://cdn.bootcss.com/flat-ui/2.3.0/css/vendor/bootstrap/css/bootstrap.min.css">
-
-  <script type="text/javascript" src="http://cdn.bootcss.com/flat-ui/2.3.0/js/vendor/jquery.min.js"></script>
-  <script type="text/javascript" src="http://cdn.bootcss.com/flat-ui/2.3.0/js/vendor/html5shiv.js"></script>
-  <script type="text/javascript" src="http://cdn.bootcss.com/flat-ui/2.3.0/js/flat-ui.js"></script>
-  <script type="text/javascript" src="http://cdn.bootcss.com/flat-ui/2.3.0/js/vendor/respond.min.js"></script>
-  <script type="text/javascript" src="http://cdn.bootcss.com/flat-ui/2.3.0/js/vendor/video.js"></script>
-
   <title>Tommego.GitHub.io</title>
   <meta name="description" content="tommego">
 
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
+  <link rel="stylesheet" type="text/css" href="index.css">
+
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css">
+  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3-theme-teal.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
 </head>
 <body>
-  <div class='block ui-site-1'></div>
+  <!-- template for the component -->
+  <script src="https://unpkg.com/vue@2.1.6/dist/vue.js"></script>
+
+  <!-- <header id="app" @touchmove.prevent>
+
+    <ul class="w3-navbar" id="nav-bar">
+      <li v-for="menu in menus">
+        <a href="#" id="nav-item">{{menu.text}}</a>
+      </li>
+    </ul>
+  </header> -->
+
+  <div class="w3-container" id="app">
+
+    <ul class="w3-navbar w3-theme w3-xlarge">
+      <li><a href="javascript:void(0)"><i class="fa fa-bars"></i></a></li>
+      <li class="w3-navitem">Title</li>
+      <li class="w3-right"><a href="javascript:void(0)"><i class="fa fa-search"></i></a></li>
+    </ul>
+
+    <!-- nav bar  -->
+    <nav class="w3-topnav w3-theme">
+      <a href="javascript:void(0)"
+      class="w3-hover-text-white"
+      v-for="menu in menus">{{menu.text}}</a>
+      <!-- <a href="javascript:void(0)" class="w3-hover-text-white">Link 2</a>
+      <a href="javascript:void(0)" class="w3-hover-text-white">Link 3</a>
+      <a href="javascript:void(0)" class="w3-hover-text-white">Link 4</a> -->
+    </nav>
+
+    <div class="w3-row" id="content">
+      <iframe src="#" id="content-frame"></iframe>
+    </div>
+
+    <div id="footer" class="w3-container w3-deep-orange">
+      footer
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
 </body>
 </html>
