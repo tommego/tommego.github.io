@@ -503,3 +503,8 @@ fieldset[disabled] .btn-success.active {
   opacity: 0;
   display: none;
 }
+
+#list-content{
+  background-color: #334544;
+  width: 100%;
+}
